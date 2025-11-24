@@ -1,11 +1,11 @@
-name: Deploy Post-Secondary Daily
+name: Deploy PSI News
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    # Runs daily at 12:00 UTC (≈ 6:00 AM Winnipeg, depending on DST)
+    # Runs daily at 12:00 UTC (≈ 6:00 AM Winnipeg)
     - cron: '0 12 * * *'
 
 permissions:
@@ -30,21 +30,21 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          # Look for any package.json, including inside your subfolder
           cache-dependency-path: '**/package.json'
 
       - name: Install dependencies
-        working-directory: copy-of-post-secondary-daily
+        # 🚫 NO working-directory here – run in repo root
         run: npm install
 
       - name: Build site
-        working-directory: copy-of-post-secondary-daily
+        # 🚫 NO working-directory – run in repo root
         run: npm run build
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: copy-of-post-secondary-daily/dist
+          # dist is in repo root
+          path: dist
 
   deploy:
     needs: build
