@@ -11,7 +11,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-1',
     headline: 'University of Manitoba Receives Historic Research Funding Boost',
-    url: 'https://news.umanitoba.ca/historic-research-funding/',
+    url: 'https://news.umanitoba.ca/',
     sourceName: 'University of Manitoba',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -27,7 +27,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-2',
     headline: 'RRC Polytech Announces New Digital Media Lab',
-    url: 'https://www.rrc.ca/news/digital-media-lab/',
+    url: 'https://www.rrc.ca/news/',
     sourceName: 'RRC Polytech News',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -42,7 +42,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-3',
     headline: 'UMFA Statement on Latest Bargaining Round',
-    url: 'http://www.umfa.ca/news/bargaining-update',
+    url: 'http://www.umfa.ca/news',
     sourceName: 'UMFA',
     sourceType: SourceType.FACULTY_ASSOC,
     region: Region.MANITOBA,
@@ -57,7 +57,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-4',
     headline: 'Tuition Hikes Protested at Legislature',
-    url: 'https://www.cbc.ca/news/canada/manitoba/students-protest-tuition-hikes',
+    url: 'https://www.cbc.ca/news/canada/manitoba',
     sourceName: 'CBC Manitoba',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.MANITOBA,
@@ -71,7 +71,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-5',
     headline: 'Brandon University Launches New Indigenous Health Program',
-    url: 'https://www.brandonu.ca/news/indigenous-health-program/',
+    url: 'https://www.brandonu.ca/news/',
     sourceName: 'Brandon University',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -86,7 +86,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-6',
     headline: 'U of W President Announces Retirement',
-    url: 'https://www.uwinnipeg.ca/news/president-announcement/',
+    url: 'https://www.uwinnipeg.ca/news/',
     sourceName: 'University of Winnipeg',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -100,7 +100,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-7',
     headline: 'ACC Expands Rural Nursing Cohort',
-    url: 'https://assiniboine.net/news/rural-nursing-expansion/',
+    url: 'https://assiniboine.net/news/',
     sourceName: 'Assiniboine Community College',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -114,7 +114,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-8',
     headline: 'Province Reviews Post-Secondary Funding Model',
-    url: 'https://winnipegfreepress.com/local/province-funding-review',
+    url: 'https://www.winnipegfreepress.com/local',
     sourceName: 'Winnipeg Free Press',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.MANITOBA,
@@ -131,7 +131,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-1',
     headline: 'One Thought to Start Your Day: The Blue-Ribbon Panel Fallout',
-    url: 'https://higheredstrategy.com/blog/blue-ribbon-fallout/',
+    url: 'https://higheredstrategy.com/blog/',
     sourceName: 'HESA (Alex Usher)',
     sourceType: SourceType.SECTOR_BLOG,
     region: Region.CANADA,
@@ -145,7 +145,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-2',
     headline: 'Federal Cap on International Student Permits: Updates',
-    url: 'https://www.theglobeandmail.com/canada/article-international-student-cap-updates/',
+    url: 'https://www.theglobeandmail.com/canada/education/',
     sourceName: 'Globe and Mail',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.CANADA,
@@ -159,7 +159,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-3',
     headline: 'McGill Law Professors Strike Continues',
-    url: 'https://www.caut.ca/news/mcgill-strike-update',
+    url: 'https://www.caut.ca/latest',
     sourceName: 'CAUT / ACPPU',
     sourceType: SourceType.FACULTY_ASSOC,
     region: Region.CANADA,
@@ -173,7 +173,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-4',
     headline: 'Tri-Council Funding Stagnation Concerns Researchers',
-    url: 'https://universityaffairs.ca/news/tri-council-funding/',
+    url: 'https://universityaffairs.ca/news/',
     sourceName: 'University Affairs',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.CANADA,
@@ -187,7 +187,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-5',
     headline: 'Alberta Institutions Face Budget Cuts',
-    url: 'https://edmontonjournal.com/news/local-news/university-budget-cuts',
+    url: 'https://edmontonjournal.com/category/news/local-news/',
     sourceName: 'Edmonton Journal',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.CANADA,
@@ -204,7 +204,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'intl-1',
     headline: 'US FAFSA Delays Cause Chaos for Fall Enrolment',
-    url: 'https://www.chronicle.com/article/fafsa-delays-chaos',
+    url: 'https://www.chronicle.com/',
     sourceName: 'Chronicle of Higher Ed',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.INTERNATIONAL,
@@ -218,7 +218,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'intl-2',
     headline: 'UK Universities Face Financial Crunch Amid Visa Restrictions',
-    url: 'https://www.timeshighereducation.com/news/uk-visa-restrictions',
+    url: 'https://www.timeshighereducation.com/news',
     sourceName: 'Times Higher Education',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.INTERNATIONAL,
@@ -232,7 +232,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'intl-3',
     headline: 'Australia Tightens Student Visa Rules',
-    url: 'https://www.smh.com.au/national/student-visa-crackdown',
+    url: 'https://www.smh.com.au/education',
     sourceName: 'Sydney Morning Herald',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.INTERNATIONAL,
@@ -246,7 +246,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'intl-4',
     headline: 'Harvard Announces New Climate Initiative',
-    url: 'https://news.harvard.edu/gazette/story/climate-initiative/',
+    url: 'https://news.harvard.edu/gazette/',
     sourceName: 'Harvard Gazette',
     sourceType: SourceType.INSTITUTION,
     region: Region.INTERNATIONAL,
