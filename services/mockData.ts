@@ -9,7 +9,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-1',
     headline: 'University of Manitoba Receives Historic Research Funding Boost',
-    url: '#',
+    url: 'https://news.umanitoba.ca/',
     sourceName: 'University of Manitoba',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -20,12 +20,12 @@ export const MOCK_ARTICLES: Article[] = [
       { id: 't2', label: 'Research Funding', type: 'topic' }
     ],
     isSuccessStory: true,
-    imageUrl: 'https://picsum.photos/800/400?random=1'
+    imageUrl: 'https://picsum.photos/seed/mb1/800/400'
   },
   {
     id: 'mb-2',
     headline: 'RRC Polytech Announces New Digital Media Lab',
-    url: '#',
+    url: 'https://www.rrc.ca/news/',
     sourceName: 'RRC Polytech News',
     sourceType: SourceType.INSTITUTION,
     region: Region.MANITOBA,
@@ -40,7 +40,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-3',
     headline: 'UMFA Statement on Latest Bargaining Round',
-    url: '#',
+    url: 'http://www.umfa.ca/news',
     sourceName: 'UMFA',
     sourceType: SourceType.FACULTY_ASSOC,
     region: Region.MANITOBA,
@@ -55,7 +55,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'mb-4',
     headline: 'Tuition Hikes Protested at Legislature',
-    url: '#',
+    url: 'https://www.cbc.ca/news/canada/manitoba',
     sourceName: 'CBC Manitoba',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.MANITOBA,
@@ -71,7 +71,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-1',
     headline: 'One Thought to Start Your Day: The Blue-Ribbon Panel Fallout',
-    url: '#',
+    url: 'https://higheredstrategy.com/blog/',
     sourceName: 'HESA (Alex Usher)',
     sourceType: SourceType.SECTOR_BLOG,
     region: Region.CANADA,
@@ -85,7 +85,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-2',
     headline: 'Federal Cap on International Student Permits: Updates',
-    url: '#',
+    url: 'https://www.theglobeandmail.com/canada/',
     sourceName: 'Globe and Mail',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.CANADA,
@@ -99,7 +99,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'can-3',
     headline: 'McGill Law Professors Strike Continues',
-    url: '#',
+    url: 'https://www.caut.ca/news',
     sourceName: 'CAUT / ACPPU',
     sourceType: SourceType.FACULTY_ASSOC,
     region: Region.CANADA,
@@ -115,7 +115,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'intl-1',
     headline: 'US FAFSA Delays Cause Chaos for Fall Enrolment',
-    url: '#',
+    url: 'https://www.chronicle.com/',
     sourceName: 'Chronicle of Higher Ed',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.INTERNATIONAL,
@@ -129,7 +129,7 @@ export const MOCK_ARTICLES: Article[] = [
   {
     id: 'intl-2',
     headline: 'UK Universities Face Financial Crunch Amid Visa Restrictions',
-    url: '#',
+    url: 'https://www.timeshighereducation.com/',
     sourceName: 'Times Higher Education',
     sourceType: SourceType.MAINSTREAM_MEDIA,
     region: Region.INTERNATIONAL,

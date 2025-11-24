@@ -40,7 +40,12 @@ export const Spotlight: React.FC<Props> = ({ articles }) => {
                         <span>•</span>
                         <span>{new Date(article.publishedAt).toLocaleDateString()}</span>
                     </div>
-                    <a href={article.url} className="block">
+                    <a 
+                      href={article.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
                         <h3 className="text-2xl font-serif font-bold leading-tight hover:underline decoration-amber-400 underline-offset-4">
                             {article.headline}
                         </h3>
