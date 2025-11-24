@@ -31,7 +31,7 @@ const App: React.FC = () => {
 
   // Filter Logic
   const filteredArticles = useMemo(() => {
-    return articles.filter(article => {
+    const result = articles.filter(article => {
       // Text Search
       const searchLower = filters.searchQuery.toLowerCase();
       const matchesSearch = 
@@ -52,6 +52,9 @@ const App: React.FC = () => {
 
       return true;
     });
+
+    // Ensure reverse chronological order (newest first)
+    return result.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, [articles, filters]);
 
   // Grouping for Display
