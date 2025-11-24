@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    # Runs at 12:00 UTC daily (≈ 6:00 AM Winnipeg time depending on DST)
+    # Runs daily at 12:00 UTC (≈ 6:00 AM Winnipeg, depending on DST)
     - cron: '0 12 * * *'
 
 permissions:
@@ -25,19 +25,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-- name: Set up Node
-  uses: actions/setup-node@v4
-  with:
-    node-version: 20
-    cache: 'npm'
-    check-latest: false
-    cache-dependency-path: '**/package.json'
-
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          # Look for any package.json, including inside your subfolder
+          cache-dependency-path: '**/package.json'
 
       - name: Install dependencies
         working-directory: copy-of-post-secondary-daily
-        run: |
-          npm ci || npm install
+        run: npm install
 
       - name: Build site
         working-directory: copy-of-post-secondary-daily
@@ -53,7 +51,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
